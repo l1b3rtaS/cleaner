@@ -9,6 +9,7 @@ def delete_mm_folders(folder_path):
         for directory in dirs:
             if directory == 'mm':
                 folder_to_delete = os.path.join(root, directory)
+                print(folder_to_delete)
                 try:
                     shutil.rmtree(folder_to_delete)  
                     a += 1
